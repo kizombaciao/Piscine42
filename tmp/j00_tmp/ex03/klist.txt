@@ -1,0 +1,7 @@
+Credentials cache: API:49133
+        Principal: jchao@42.US.ORG
+
+  Issued                Expires               Principal
+Jan  7 14:38:25 2019  Jan  8 00:38:25 2019  krbtgt/42.US.ORG@42.US.ORG
+Jan  7 14:38:29 2019  Jan  8 00:38:25 2019  ldap/ldap-master.42.us.org@42.US.ORG
+Jan  7 15:02:04 2019  Jan  8 00:38:25 2019  host/vgs-fn1.42.us.org@42.US.ORG
