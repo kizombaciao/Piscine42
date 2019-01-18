@@ -1,0 +1,23 @@
+#include <stdlib.h>
+#include <stdio.h>
+#define LEN  40
+
+int main()
+{
+  int i;
+  char *str;
+
+  str = (char *)malloc(sizeof(*str) * (LEN + 1));
+  i = 0;
+  while (i < LEN) {
+    str[i] = '0' + (i%10);
+    i++;
+  }
+  str[i] = '\0';
+  /*
+  free(str);
+  */
+
+  printf("\n111:  %s", str);
+  return (0);
+}

@@ -1,0 +1,24 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+void test(int *t1, len)
+{
+  int i;
+
+  for (i=0; i<len; i++) {
+    printf("\n111:  %d", t1[i]);
+
+  }
+
+}
+
+
+int main()
+{
+  int t1[100];
+  int *p;
+
+  test(t1, 10);
+  
+  return (0);
+}
