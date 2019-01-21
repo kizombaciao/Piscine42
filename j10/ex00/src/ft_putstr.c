@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_generic.c                                       :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jchao <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/18 15:16:47 by jchao             #+#    #+#             */
-/*   Updated: 2019/01/18 15:16:55 by jchao            ###   ########.fr       */
+/*   Created: 2019/01/15 17:45:35 by jchao             #+#    #+#             */
+/*   Updated: 2019/01/15 17:48:18 by jchao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+int		ft_putchar(char c);
 
-void	ft_generic(void)
+void	ft_putstr(char *str)
 {
-	write(1, "Tut tut ; Tut tut\n", 18);
+	int i;
+
+  	i = 0;
+  	while (str[i]) {
+    	ft_putchar(str[i]);
+    	i++;
+  	}
 }
