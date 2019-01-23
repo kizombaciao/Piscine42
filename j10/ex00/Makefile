@@ -1,15 +1,19 @@
-NAME = libft.a
-SRC = srcs/ft_*.c
-HEADER = ./includes/
+NAMELIB = libft.a
+SRC = ./src/ft_putchar.c ./src/ft_strcmp.c ./src/ft_putstr.c ./src/ft_strlen.c ./src/ft_swap.c
+HEADER = ./includes/ft.h
+FLAG = -Wall -Wextra -Werror
 
-all:  	$(NAME)
+all: $(NAMELIB)
 
-$(NAME):	gcc -Wall -Wextra -Werror -c $($SRC) -I $(HEADER)
-	ar rc $(NAME) *.o
+$(NAMELIB):
+	gcc $(FLAG) -c $(SRC) -I $(HEADER)
+	ar rc $(NAMELIB) *.o
+	ranlib $(NAMELIB)
 
-clean:	/bin/rm -f *.o
+clean:
+	rm -f *.o
 
-fclean:	clean
-	/bin/rm -f $(NAME)
+fclean:
+	rm -f $(NAMELIB) *.o
 
-re:	fclean all
+re: fclean all

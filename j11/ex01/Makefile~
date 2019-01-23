@@ -1,0 +1,21 @@
+NAME = aaa
+
+SRC = ./*.c
+
+HEADER = ~/Documents/Git/j11/ex00/*.h
+
+FLAG = -Wall -Wextra -Werror
+
+all:	$(NAME)
+
+$(NAME):
+	gcc -I $(HEADER) -o $(NAME) $(SRC)
+
+clean:
+	rm -f *.o
+
+fclean:
+	clean rm -f $(NAME)
+
+re:
+	fclean all
