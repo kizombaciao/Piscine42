@@ -23,7 +23,7 @@ int main()
     
     printf("\na3  Address of num:  %p", &num);
     printf("\na3  Content in p:  %p", p);
-    printf("\n*q:  %p", *q);
+    printf("\n*         q:       %p", *q);
     
     printf("\na2  Address of p:  %p", &p);
     printf("\na2  Content in q:  %p", q);

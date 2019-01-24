@@ -1,32 +1,33 @@
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_list_push_back.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jchao <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/01/23 22:35:26 by jchao             #+#    #+#             */
+/*   Updated: 2019/01/23 22:36:25 by jchao            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "ft_list.h"
 
-void ft_list_push_back(t_list **begin_list, void *data)
+void	ft_list_push_back(t_list **begin_list, void *data)
 {
-    t_list *tmp_list_ptr;
-    tmp_list_ptr = *begin_list;
-    
-    if (!tmp_list_ptr) {
-        printf("\nNULL");
-    }
-    
-    /*
-    tmp_list_ptr = ft_create_elem(data);
-    */
-    /*
-    while (tmp_list_ptr) {
-        tmp_list_ptr = tmp_list_ptr->next;
-    }
-    if (tmp_list_ptr->next == NULL) {
-        printf("\nHEY");
-    }
-    */
+	t_list	*tmp;
+
+	if ((*begin_list) == NULL)
+	{
+		(*begin_list) = ft_create_elem(data);
+		return ;
+	}
+	else
+	{
+		while ((*begin_list)->next != NULL)
+		{
+			(*begin_list) = (*begin_list)->next;
+		}
+		tmp = ft_create_elem(data);
+		(*begin_list)->next = tmp;
+	}
 }
-
-
-
-/*
- #include "~/Documents/Git/j11/ex00/ft_list.h"
-
- */
