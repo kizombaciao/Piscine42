@@ -1,15 +1,23 @@
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_list.h                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jchao <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/01/23 23:45:42 by jchao             #+#    #+#             */
+/*   Updated: 2019/01/23 23:45:50 by jchao            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef ft_list_h
 #define ft_list_h
 
-#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct      s_list
 {
     void            *data;
-    int             num;
     struct s_list   *next;
 }                   t_list;
 
@@ -26,5 +34,4 @@ void ft_list_foreach(t_list *begin_list, void (*f)(void *));
 void ft_list_foreach_if(t_list *begin_list, void (*f)(void *), void *data_ref, int (*cmp)(void *, void *));
 
 
-
-#endif /* ft_list_h */
+#endif
