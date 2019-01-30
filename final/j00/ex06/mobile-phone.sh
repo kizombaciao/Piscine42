@@ -1,0 +1,1 @@
+ldapmodify -a -f mobile-phone.ldif
