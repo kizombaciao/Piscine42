@@ -1,0 +1,19 @@
+#include <unistd.h>
+#include <stdio.h>
+
+int ft_putchar()
+
+void ft_putstr(char *str)
+{
+
+
+}
+
+
+int main()
+{
+  int num;
+
+  printf("\n111:  %d", num);
+  return (0);
+}

@@ -1,0 +1,2 @@
+gcc -c ft_split_whitespaces.c ft_strlen.c
+gcc -o aaa ft_split_whitespaces.o ft_strlen.o

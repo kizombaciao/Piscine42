@@ -1,0 +1,45 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+int ft_ultimate_range(int **range, int min, int max)
+{
+  int j;
+  int **p;
+
+  p = (int **)malloc(1 * sizeof(int *));
+
+  printf("\naaa");
+  j = 0;
+  while (j < (max - min)) {
+    *(p + j) = (int *)malloc((max - min) * sizeof(int));
+    printf("\njjj  %d", j);
+    j++;
+  }
+  printf("\nbbb");
+  j = 0;
+  while (j < (max - min)) {
+    *(*p + j) = min + j;
+    j++;
+  }
+  for (j = 0;j < (max - min); j++) {
+    printf("\n222:  %d", *(*p + j));
+  }
+  range = p;
+  return (max-min);
+}
+
+
+int main()
+{
+  int i;
+  int num;
+  int **range;
+
+  num = ft_ultimate_range(range, -10, 10);
+  /*
+  for (i=0;i<(20);i++) {
+    printf("\n111:  %d", *(*(range) + i));
+  }
+  */
+  return (0);
+}

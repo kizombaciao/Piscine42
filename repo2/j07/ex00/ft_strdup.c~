@@ -1,0 +1,42 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+/* The strdup() function returns a pointer to a new string which is a duplicate of the string s. Memory for the new string is obtained with malloc(3), and can be freed with free(3). */
+
+int ft_strlen(char *str);
+
+char *ft_strdup(char *src)
+{
+    char *str;
+    int i;
+
+    printf("\n111:  %d", ft_strlen(src));
+
+    str = (char *)malloc(sizeof(*str) * (ft_strlen(src) + 1));
+
+    if (str != NULL) {
+    
+        i = 0;
+        while (i < ft_strlen(src)) {
+            str[i] = src[i];
+            i++;
+        }
+        str[i] = '\0';
+        return (str);
+    } else {
+        return (NULL);
+    }
+
+int main()
+{
+  char temp[100];
+  char *p;
+
+  p = ft_strdup("test");
+
+
+  printf("\n222:  %s", p);
+
+
+  return (0);
+}

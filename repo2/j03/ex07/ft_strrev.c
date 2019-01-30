@@ -1,0 +1,56 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrev.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jchao <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/01/11 11:33:04 by jchao             #+#    #+#             */
+/*   Updated: 2019/01/11 11:33:18 by jchao            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#include <unistd.h>
+#include <stdio.h>
+
+char *ft_strrev(char *str)
+{
+  char temp;
+  char *ptr_str2;
+  int length = 0;
+  int i;
+  int j;
+
+  printf("\n444:  %s", str);
+
+  while (str[length]) {
+    length++;
+  }
+  
+  j = 0;
+  i = length-1;
+  while (j < i) {
+    temp = str[i];
+    str[i] = str[j];
+    str[j] = temp;
+    j++;
+    i--;
+  }
+
+  printf("\n333:  %d", length);
+  printf("\n111:  %s", str);
+
+  ptr_str2 = str;
+
+  return(str);
+}
+
+int main()
+{
+  char str[] = "abcdefghi";
+  char *ptr_str;
+
+  ptr_str = ft_strrev(str);
+
+  printf("\n222:  %s", ptr_str);
+  return (0);
+}

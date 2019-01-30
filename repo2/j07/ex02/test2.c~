@@ -1,0 +1,32 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+int ft_ultimate_range(int **range, int min, int max)
+{
+  int j;
+  int **p;
+
+  *range = (int *)malloc((max - min) * sizeof(int));
+
+  j = 0;
+  while (j < (max - min)) {
+    *(range + j) = min + j;
+    printf("\n333:  %d", *(*p + j));
+    j++;
+  }
+}
+
+int main()
+{
+  int i;
+  int num;
+   int *range;
+
+  num = ft_ultimate_range(&range, -5, 5);
+
+  for (i = 0; i < (10) ; i++) {
+    printf("\n111:  %d", *(*(range) + i));
+  }
+  free(range);
+  return (0);
+}

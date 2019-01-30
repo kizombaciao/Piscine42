@@ -1,0 +1,14 @@
+NAME = tail
+
+SRC = main.c
+
+all: $(NAME)
+
+$(NAME):	
+	gcc -o $(NAME) $(SRC)
+
+clean:	/bin/rm main.o
+
+fclean:	/bin/rm $(NAME)
+
+re:	/bin/rm $(NAME) main.o all
