@@ -29,5 +29,5 @@ int		main(int ac, char **av)//
 {//
 	if (ac == 3)//
 		printf("%s", ft_itoa_base(atoi(av[1]), atoi(av[2])));//
-	return (1);//
+	return (0);// this should be zero!
 }//

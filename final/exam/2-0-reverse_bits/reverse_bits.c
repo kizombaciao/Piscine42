@@ -28,10 +28,10 @@ int	main(void)
 {
 	unsigned char c;
 
-	c = '&';
+	c = '00100110';
 	write(1, &c, 1);
 	write(1, "\n", 1);
-	c = reverse_bits(c);
+	c = reverse_bits2(c);
 	write(1, &c, 1);
 	write(1, "\n", 1);
 	return (0);

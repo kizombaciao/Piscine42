@@ -21,9 +21,9 @@ t_list *ft_create_elem(void *data)
 
 int main()
 {
-    t_list **f_list_ptr;
-    void *data_ptr;
-    int data;
+    t_list **f_list_ptr; // ptr to ptr
+    void *data_ptr; // void pointer to an int data
+    int data; // using int data
     
     data = 0;
     data_ptr = &data;
@@ -35,6 +35,4 @@ int main()
 
 /*
     what is void *data???
- 
- 
  */

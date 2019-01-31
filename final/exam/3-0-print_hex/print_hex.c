@@ -20,6 +20,7 @@ int		ft_atoi(char *s)
 		r = r * 10 + *s++ - '0';
 	return ((int)r * sign); // type cast
 }
+// rewrite below code without recursion
 void    print_hex(int n)
 {
     if (n >= 16)
