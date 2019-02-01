@@ -11,7 +11,7 @@ void	ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)())
 	{
 		tmp = *begin_list; // why even create tmp???
 		*begin_list = (*begin_list)->next;
-		free(tmp);
+		free(tmp); // this doesn't look right
 	}
 	i = *begin_list;
 	while (i && i->next) // TO REMOVE, ALSO NEED TO LOOK A STEP AHEAD

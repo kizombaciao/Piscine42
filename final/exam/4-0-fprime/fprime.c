@@ -23,6 +23,8 @@ int        ft_atoi(char *s)
     }
     return (sign * (int)r);
 }
+// how does the code ensure that the factors are prime numbers???
+// why no isPrime() function calls???
 void	fprime(unsigned int nb)
 {
 	unsigned	i;
@@ -34,13 +36,13 @@ void	fprime(unsigned int nb)
 		i = 1;
 		while (nb > 1)
 		{
-			if (nb % ++i == 0)
+			if (nb % ++i == 0) // found a factor
 			{
 				printf("%d", i);
 				nb /= i;
 				if (nb > 1) // to know if there are more factors
 					printf("*");
-				--i; // why not start counter from 1 again???
+				--i; // why not start counter from 1 again?
 			} // b/c if there was a lower factor, we would have seen it
 		}
 	}

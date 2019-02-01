@@ -17,3 +17,13 @@ int		main(int ac, char **av)
 	ft_putnbr(ac - 1);
 	write(1, "\n", 1);
 }
+
+/*
+void putnbr(int n)
+{
+    if (n > 9) {
+        putnbr(n / 10);
+    }
+    putchar(n % 10 + '0');
+}
+*/

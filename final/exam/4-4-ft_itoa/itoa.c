@@ -7,7 +7,7 @@
 // malloc
 char *itoa(int n)
 {
-    int sign = 1, n2, len;
+    int sign = 1, n2, len; // sign to handle case of negative
     char *s;
     
     n2 = n;
@@ -19,6 +19,7 @@ char *itoa(int n)
         n2 /= 10;
         len++;
     }
+    // len for negative # is 1 unit longer
     len = (sign == -1) ? len + 1: len;
     s = (char *)malloc(sizeof(char) * (len + 1));
     s[len] = '\0';
