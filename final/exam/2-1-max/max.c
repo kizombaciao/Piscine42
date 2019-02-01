@@ -6,6 +6,7 @@ int		max(int *tab, unsigned int len) {
 
 	if (!len) // check if len = 0
 		return (0);
+    
     // decrement first,
     // arbitrarily set max to last integer
 	max = tab[--len];
@@ -15,6 +16,15 @@ int		max(int *tab, unsigned int len) {
 			max = tab[len];
 	return (max);
 }
+int main()
+{
+    int tab[] = {7, 6, 4};
+
+    printf("%d", max(tab, 3));
+    return (0);
+}
+
+/*
 int		main(void) {
 	int	*tab;
 	if (!(tab = (int*)malloc(sizeof(int) * 3)))//
@@ -24,4 +34,5 @@ int		main(void) {
 	tab[2] = 4;
 	printf("%d", max(tab, 3));
 	return (0);
-}//
+}
+*/

@@ -15,3 +15,14 @@ int		main(void)
 	ft_putchar('\n');;
 	return (0);
 }
+
+void ttt()
+{
+    int i = '{';
+    
+    while (i-- > 'a') {
+        (i % 2 == 0) ? write(1, &(i - ('a' - 'A'), 1) : write(1, &i, 1);
+        write(1, &c , 1);
+        i++;
+    }
+ }

@@ -20,3 +20,12 @@ int main()
     ft_putstr("test");
     
 }
+/*
+void ttt()
+{
+    while (*str) {
+        write(1, str++, 1);
+        
+    }
+}
+

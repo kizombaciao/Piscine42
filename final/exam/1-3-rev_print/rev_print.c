@@ -4,8 +4,6 @@ void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
-
-
 int		ft_strlen(char *s)
 {
 	int i;
@@ -15,8 +13,6 @@ int		ft_strlen(char *s)
 		i++;
 	return (i);
 }
-
-
 int		main(int ac, char **av)
 {
 	int len;
@@ -28,4 +24,14 @@ int		main(int ac, char **av)
 			write(1, &av[1][len], 1);
 	}
 	ft_putchar('\n');
+}
+
+/*
+void ttt()
+{
+    len = strlen(av[1]);
+    while (len--) {
+        write(1, &av[1][len], 1);
+    }
+    
 }

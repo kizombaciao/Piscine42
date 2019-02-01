@@ -29,6 +29,17 @@ int main(int argc, char **argv) {
 	return 0;
 }
 /*
+void ttt()
+{
+    while (*av[1]) {
+        if (*av[1] == av[2][0]) {
+            *av[1] = av[3][0];
+        }
+        *av[1]++
+    }
+}
+
+/*
 
  while (*argv[1] != '\0') {
  if (*argv[1] == argv[2][0])

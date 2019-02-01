@@ -34,3 +34,16 @@ int		main(int ac, char **av)
 	}
 	ft_putchar('\n');
 }
+
+/*
+void ttt()
+{
+    while (*av[1]) {
+        repeat = letter_count(av[1]);
+        while (repeat--) {
+            write(1, av[1], 1);
+        }
+        av[1]++;
+    }
+}
+

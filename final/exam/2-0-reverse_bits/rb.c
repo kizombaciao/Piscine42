@@ -21,6 +21,7 @@ int main()
     unsigned char a = 1; // 0000.0001
     // the mirror becomes 1000.0000 which is equal to 2^7 = 128.
     printf("\n%d", reverse_bits(a)); // output:  128
+    // note, unsigned char uses %d
     return 0;
 }
 

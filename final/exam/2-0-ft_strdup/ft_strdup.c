@@ -1,8 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
-// first find the length
+// first, find the length
 // then call malloc to get memory for that length
-
 
 char	*ft_strdup(char *src)
 {

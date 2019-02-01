@@ -11,6 +11,12 @@ int		main(void)
 
 	c = 1;
 	c = swap_bits(c);
-    printf("\n%u", c);
+    printf("\n%u   %d", c, c); // note, %u is used for unsigned char
 	return (0);
 }
+/*
+unsigned char sb(unsigned char oct)
+{
+    return((oct >> 4) | (oct << 4));
+}
+*/

@@ -14,8 +14,8 @@ void	rotone(char *s)
 		else if (*s == 'Z' || *s == 'z')
 			ft_putchar(*s - 25);
 		else
-			ft_putchar(*s);
-		++s;
+			ft_putchar(*s); // also, if not alphabet
+		++s; // note, increment ++
 	}
 }
 int		main(int ac, char **av)
@@ -24,4 +24,17 @@ int		main(int ac, char **av)
 		rotone(av[1]);
 	ft_putchar('\n');
 	return (0);
+}
+
+void ttt()
+{
+    
+    while (*av[1]) {
+        if (*av[1] != 'z') {
+            c = *av[1] + 1;
+        } else {
+            c = 'a';
+        }
+    }
+    
 }
