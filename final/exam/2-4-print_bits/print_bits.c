@@ -16,8 +16,10 @@ void	print_bits(unsigned char octet) {
 }
 void	print_bits2(unsigned char octet) {
     int	i = 256; // why 256 instead of 128???
-	while (i >>= 1)
+    while (i >>= 1) {
 		(octet & i) ? write(1, "1", 1) : write(1, "0", 1);
+        printf("\n%d", i);
+    }
 }
 int		main(void)
 {
@@ -25,4 +27,13 @@ int		main(void)
 	//print_bits(n);
 	write(1, "\n", 1);
     print_bits2(n);
+}
+
+void ttt()
+{
+    i = 256;
+    while (i >>= 1) {
+        (octet & i) ? write(1,"1",1) : write(1,"0",1);
+        
+    }
 }

@@ -21,9 +21,9 @@ int is_prime(int n) {
 	int i;
 	i = 2; // start at 2
 	while (i < n) // try every digit up to n
-		if (!(n % i++)) // if there is a divisor,
-			return (0);
-	return (1);
+		if (!(n % i++)) // if there is a divisor, as long as zero
+			return (0); // not a prime
+	return (1); // a prime, since no divisor was found
 }
 
 void	add_prime_sum(int n) {

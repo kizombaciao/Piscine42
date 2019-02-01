@@ -10,10 +10,12 @@ void	hidenp(char *s1, char *s2)
 		if (*s1 == *s2++) // note, the placement of the ++
         {
             // printf("\n111:  %c   %c", *s1, *s2);
+            write(1, s1, 1);
             s1++; // if match, then check next s1
         }
     }
-    (*s1 == '\0') ? write(1, "1", 1) : write(1, "0", 1);
+    // not sure why below is here
+    //(*s1 == '\0') ? write(1, "1", 1) : write(1, "0", 1);
 }
 int	main(int argc, char **argv)
 {

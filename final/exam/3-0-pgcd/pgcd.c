@@ -7,6 +7,7 @@ int		pgcd(unsigned int nb, unsigned int nb2)
 	int i;
 
 	i = nb; // doesn't matter if nb or nb2?
+    // b/c common denominator can't be greater
 	while (i > 0) // use brute force loop
 	{ // loop downward
 		if (nb % i == 0 && nb2 % i == 0)

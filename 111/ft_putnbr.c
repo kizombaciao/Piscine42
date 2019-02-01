@@ -23,10 +23,10 @@ void	ft_putnbr(int nb)
 		nb *= -1;
 	}
 	i = 0;
-	while (nb != 0)
+	while (nb != 0) // till nb == 0
 	{
-		num[i] = nb % 10;
-		nb = nb / 10;
+		num[i] = nb % 10; // find remainder
+		nb = nb / 10; // divide by 10
 		i++;
 	}
 	while (i > 0)
